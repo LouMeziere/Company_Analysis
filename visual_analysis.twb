@@ -1,0 +1,1621 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='task1' inline='true' name='federated.0r241a90wfr6zy1d40hec0yfhg2v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='task1' name='textscan.1fl0wn50zom67o155vaiz1q369kx'>
+            <connection class='textscan' directory='/Users/loumeziere/Desktop' filename='task1.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1fl0wn50zom67o155vaiz1q369kx' name='task1.csv' table='[task1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='calendar_year' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='num_of_employees' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1fl0wn50zom67o155vaiz1q369kx' name='task1.csv' table='[task1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='integer' name='calendar_year' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='num_of_employees' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[task1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_year]</local-name>
+            <parent-name>[task1.csv]</parent-name>
+            <remote-alias>calendar_year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_CCFDC4B7962042E0B17958876D5E9C20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[task1.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_CCFDC4B7962042E0B17958876D5E9C20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_of_employees</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_of_employees]</local-name>
+            <parent-name>[task1.csv]</parent-name>
+            <remote-alias>num_of_employees</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task1.csv_CCFDC4B7962042E0B17958876D5E9C20]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='task1.csv' datatype='table' name='[__tableau_internal_object_id__].[task1.csv_CCFDC4B7962042E0B17958876D5E9C20]' role='measure' type='quantitative' />
+      <column caption='Calendar Year' datatype='integer' name='[calendar_year]' role='dimension' type='quantitative' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='Num Of Employees' datatype='integer' name='[num_of_employees]' role='measure' type='quantitative' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/k9/pf_5mp0d6ng9y74z5ydlgz4c0000gn/T/tableau-temp/#TableauTemp_1kqlygb1wq0k3x1emtf8x0l1p5x9.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/21/2024 06:28:48 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>calendar_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calendar_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calendar_year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>task1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>task1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_of_employees</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_of_employees]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_of_employees</remote-alias>
+              <ordinal>2</ordinal>
+              <family>task1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='task1.csv' id='task1.csv_CCFDC4B7962042E0B17958876D5E9C20'>
+            <properties context=''>
+              <relation connection='textscan.1fl0wn50zom67o155vaiz1q369kx' name='task1.csv' table='[task1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='integer' name='calendar_year' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='integer' name='num_of_employees' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='task2' inline='true' name='federated.01k964h1nyqso313ve1rx1uegmqv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='task2' name='textscan.1ewucwu0hkxf96190zsua0va78kk'>
+            <connection class='textscan' directory='/Users/loumeziere/Desktop' filename='task2.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ewucwu0hkxf96190zsua0va78kk' name='task2.csv' table='[task2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='dept_name' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='emp_no' ordinal='2' />
+            <column datatype='date' name='from_date' ordinal='3' />
+            <column datatype='date' name='to_date' ordinal='4' />
+            <column datatype='integer' name='calendar_year' ordinal='5' />
+            <column datatype='integer' name='active' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ewucwu0hkxf96190zsua0va78kk' name='task2.csv' table='[task2#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='dept_name' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='integer' name='emp_no' ordinal='2' />
+            <column datatype='date' name='from_date' ordinal='3' />
+            <column datatype='date' name='to_date' ordinal='4' />
+            <column datatype='integer' name='calendar_year' ordinal='5' />
+            <column datatype='integer' name='active' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[task2.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dept_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dept_name]</local-name>
+            <parent-name>[task2.csv]</parent-name>
+            <remote-alias>dept_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_45B89A8448084A7B99FB0DEBD95AEEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[task2.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_45B89A8448084A7B99FB0DEBD95AEEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>emp_no</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[emp_no]</local-name>
+            <parent-name>[task2.csv]</parent-name>
+            <remote-alias>emp_no</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_45B89A8448084A7B99FB0DEBD95AEEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>from_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[from_date]</local-name>
+            <parent-name>[task2.csv]</parent-name>
+            <remote-alias>from_date</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_45B89A8448084A7B99FB0DEBD95AEEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>to_date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[to_date]</local-name>
+            <parent-name>[task2.csv]</parent-name>
+            <remote-alias>to_date</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_45B89A8448084A7B99FB0DEBD95AEEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_year]</local-name>
+            <parent-name>[task2.csv]</parent-name>
+            <remote-alias>calendar_year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_45B89A8448084A7B99FB0DEBD95AEEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>active</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[active]</local-name>
+            <parent-name>[task2.csv]</parent-name>
+            <remote-alias>active</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task2.csv_45B89A8448084A7B99FB0DEBD95AEEF5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='task2.csv' datatype='table' name='[__tableau_internal_object_id__].[task2.csv_45B89A8448084A7B99FB0DEBD95AEEF5]' role='measure' type='quantitative' />
+      <column caption='Active' datatype='integer' name='[active]' role='measure' type='quantitative' />
+      <column caption='Calendar Year' datatype='integer' name='[calendar_year]' role='dimension' type='quantitative' />
+      <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+      <column caption='Emp No' datatype='integer' name='[emp_no]' role='measure' type='quantitative' />
+      <column caption='From Date' datatype='date' name='[from_date]' role='dimension' type='ordinal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column caption='To Date' datatype='date' name='[to_date]' role='dimension' type='ordinal' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/k9/pf_5mp0d6ng9y74z5ydlgz4c0000gn/T/tableau-temp/#TableauTemp_1i3lk4v1hby9wz1g5omd804at8yt.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/21/2024 06:29:19 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>dept_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dept_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dept_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>task2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>task2.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>emp_no</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[emp_no]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>emp_no</remote-alias>
+              <ordinal>2</ordinal>
+              <family>task2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>91</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>from_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[from_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>from_date</remote-alias>
+              <ordinal>3</ordinal>
+              <family>task2.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>74</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>to_date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[to_date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>to_date</remote-alias>
+              <ordinal>4</ordinal>
+              <family>task2.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>64</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>calendar_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calendar_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calendar_year</remote-alias>
+              <ordinal>5</ordinal>
+              <family>task2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>active</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[active]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>active</remote-alias>
+              <ordinal>6</ordinal>
+              <family>task2.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='task2.csv' id='task2.csv_45B89A8448084A7B99FB0DEBD95AEEF5'>
+            <properties context=''>
+              <relation connection='textscan.1ewucwu0hkxf96190zsua0va78kk' name='task2.csv' table='[task2#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='dept_name' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='integer' name='emp_no' ordinal='2' />
+                  <column datatype='date' name='from_date' ordinal='3' />
+                  <column datatype='date' name='to_date' ordinal='4' />
+                  <column datatype='integer' name='calendar_year' ordinal='5' />
+                  <column datatype='integer' name='active' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='task3' inline='true' name='federated.1qmggym0z6fjce1bctksb1jdjfrt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='task3' name='textscan.14oob5z1pbr38e12cc4a71cpu9ol'>
+            <connection class='textscan' directory='/Users/loumeziere/Desktop' filename='task3.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.14oob5z1pbr38e12cc4a71cpu9ol' name='task3.csv' table='[task3#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='gender' ordinal='0' />
+            <column datatype='string' name='dept_name' ordinal='1' />
+            <column datatype='real' name='avg_salary' ordinal='2' />
+            <column datatype='integer' name='calendar_year' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.14oob5z1pbr38e12cc4a71cpu9ol' name='task3.csv' table='[task3#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='gender' ordinal='0' />
+            <column datatype='string' name='dept_name' ordinal='1' />
+            <column datatype='real' name='avg_salary' ordinal='2' />
+            <column datatype='integer' name='calendar_year' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[task3.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[task3.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task3.csv_808747AE2AF542D89295EEDD3D424E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dept_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dept_name]</local-name>
+            <parent-name>[task3.csv]</parent-name>
+            <remote-alias>dept_name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task3.csv_808747AE2AF542D89295EEDD3D424E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_salary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_salary]</local-name>
+            <parent-name>[task3.csv]</parent-name>
+            <remote-alias>avg_salary</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task3.csv_808747AE2AF542D89295EEDD3D424E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calendar_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[calendar_year]</local-name>
+            <parent-name>[task3.csv]</parent-name>
+            <remote-alias>calendar_year</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task3.csv_808747AE2AF542D89295EEDD3D424E15]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='task3.csv' datatype='table' name='[__tableau_internal_object_id__].[task3.csv_808747AE2AF542D89295EEDD3D424E15]' role='measure' type='quantitative' />
+      <column caption='Avg Salary' datatype='real' name='[avg_salary]' role='measure' type='quantitative' />
+      <column caption='Calendar Year' datatype='integer' name='[calendar_year]' role='dimension' type='quantitative' />
+      <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/k9/pf_5mp0d6ng9y74z5ydlgz4c0000gn/T/tableau-temp/#TableauTemp_0ziuokh01t3cpj106k1t71blw0gi.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/21/2024 07:47:45 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>0</ordinal>
+              <family>task3.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dept_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dept_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dept_name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>task3.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_salary</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_salary</remote-alias>
+              <ordinal>2</ordinal>
+              <family>task3.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>234</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>calendar_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[calendar_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calendar_year</remote-alias>
+              <ordinal>3</ordinal>
+              <family>task3.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='task3.csv' id='task3.csv_808747AE2AF542D89295EEDD3D424E15'>
+            <properties context=''>
+              <relation connection='textscan.14oob5z1pbr38e12cc4a71cpu9ol' name='task3.csv' table='[task3#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='gender' ordinal='0' />
+                  <column datatype='string' name='dept_name' ordinal='1' />
+                  <column datatype='real' name='avg_salary' ordinal='2' />
+                  <column datatype='integer' name='calendar_year' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='task4' inline='true' name='federated.0pm338a1osh57v14tmpvj0alziep' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='task4' name='textscan.0yu2fv81fhgq9m15o8dsk0bend5v'>
+            <connection class='textscan' directory='/Users/loumeziere/Desktop' filename='task4.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0yu2fv81fhgq9m15o8dsk0bend5v' name='task4.csv' table='[task4#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='dept_name' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='real' name='avg_salary' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0yu2fv81fhgq9m15o8dsk0bend5v' name='task4.csv' table='[task4#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+            <column datatype='string' name='dept_name' ordinal='0' />
+            <column datatype='string' name='gender' ordinal='1' />
+            <column datatype='real' name='avg_salary' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[task4.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_CA&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dept_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dept_name]</local-name>
+            <parent-name>[task4.csv]</parent-name>
+            <remote-alias>dept_name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_B20A46AD0DE2485AB7ECCF1916AE484D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gender</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gender]</local-name>
+            <parent-name>[task4.csv]</parent-name>
+            <remote-alias>gender</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_B20A46AD0DE2485AB7ECCF1916AE484D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>avg_salary</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_salary]</local-name>
+            <parent-name>[task4.csv]</parent-name>
+            <remote-alias>avg_salary</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[task4.csv_B20A46AD0DE2485AB7ECCF1916AE484D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='task4.csv' datatype='table' name='[__tableau_internal_object_id__].[task4.csv_B20A46AD0DE2485AB7ECCF1916AE484D]' role='measure' type='quantitative' />
+      <column caption='Avg Salary' datatype='real' name='[avg_salary]' role='measure' type='quantitative' />
+      <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+      <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+      <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='/var/folders/k9/pf_5mp0d6ng9y74z5ydlgz4c0000gn/T/tableau-temp/#TableauTemp_0n8d7ox0q8ho5m1fblukh16ec3r4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/22/2024 03:16:30 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>dept_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dept_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dept_name</remote-alias>
+              <ordinal>0</ordinal>
+              <family>task4.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gender</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gender]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gender</remote-alias>
+              <ordinal>1</ordinal>
+              <family>task4.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_salary</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_salary</remote-alias>
+              <ordinal>2</ordinal>
+              <family>task4.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Canada&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='task4.csv' id='task4.csv_B20A46AD0DE2485AB7ECCF1916AE484D'>
+            <properties context=''>
+              <relation connection='textscan.0yu2fv81fhgq9m15o8dsk0bend5v' name='task4.csv' table='[task4#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_CA' separator=','>
+                  <column datatype='string' name='dept_name' ordinal='0' />
+                  <column datatype='string' name='gender' ordinal='1' />
+                  <column datatype='real' name='avg_salary' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>A breakdown between male and female employees</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='task1' name='federated.0r241a90wfr6zy1d40hec0yfhg2v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0r241a90wfr6zy1d40hec0yfhg2v'>
+            <column caption='Calendar Year' datatype='integer' name='[calendar_year]' role='dimension' type='quantitative' />
+            <column-instance column='[num_of_employees]' derivation='Sum' name='[cum:sum:num_of_employees:qk]' pivot='key' type='quantitative'>
+              <table-calc aggregation='Sum' ordering-type='Rows' type='CumTotal' />
+            </column-instance>
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[calendar_year]' derivation='None' name='[none:calendar_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column caption='Num Of Employees' datatype='integer' name='[num_of_employees]' role='measure' type='quantitative' />
+            <column-instance column='[num_of_employees]' derivation='Sum' name='[pcto:sum:num_of_employees:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0r241a90wfr6zy1d40hec0yfhg2v].[none:calendar_year:qk]' field-type='quantitative' max='2003' min='1989' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='0.84999999999999998' mark-alignment='mark-alignment-center' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='true' />
+            <encodings>
+              <color column='[federated.0r241a90wfr6zy1d40hec0yfhg2v].[none:gender:nk]' />
+              <text column='[federated.0r241a90wfr6zy1d40hec0yfhg2v].[pcto:sum:num_of_employees:qk:2]' />
+              <lod column='[federated.0r241a90wfr6zy1d40hec0yfhg2v].[none:gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.9890055656433105' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0r241a90wfr6zy1d40hec0yfhg2v].[cum:sum:num_of_employees:qk]</rows>
+        <cols>[federated.0r241a90wfr6zy1d40hec0yfhg2v].[none:calendar_year:qk]</cols>
+      </table>
+      <simple-id uuid='{EEE8CCEC-ACE9-444E-B979-896545FBBCF8}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Number of managers per departments </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='task2' name='federated.01k964h1nyqso313ve1rx1uegmqv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.01k964h1nyqso313ve1rx1uegmqv'>
+            <column caption='Active' datatype='integer' name='[active]' role='measure' type='quantitative' />
+            <column caption='Calendar Year' datatype='integer' name='[calendar_year]' role='dimension' type='quantitative' />
+            <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[calendar_year]' derivation='None' name='[none:calendar_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dept_name]' derivation='None' name='[none:dept_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[active]' derivation='Sum' name='[sum:active:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.01k964h1nyqso313ve1rx1uegmqv].[none:dept_name:nk]'>
+            <groupfilter function='level-members' level='[none:dept_name:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.01k964h1nyqso313ve1rx1uegmqv].[none:dept_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.01k964h1nyqso313ve1rx1uegmqv].[none:gender:nk]' />
+              <lod column='[federated.01k964h1nyqso313ve1rx1uegmqv].[none:gender:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.01k964h1nyqso313ve1rx1uegmqv].[sum:active:qk]</rows>
+        <cols>[federated.01k964h1nyqso313ve1rx1uegmqv].[none:calendar_year:qk]</cols>
+      </table>
+      <simple-id uuid='{8E90E465-C32F-432B-A4A9-07E85DB09759}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Average annual employee salary</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='task3' name='federated.1qmggym0z6fjce1bctksb1jdjfrt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qmggym0z6fjce1bctksb1jdjfrt'>
+            <column-instance column='[avg_salary]' derivation='Avg' name='[avg:avg_salary:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Salary' datatype='real' name='[avg_salary]' role='measure' type='quantitative' />
+            <column caption='Calendar Year' datatype='integer' name='[calendar_year]' role='dimension' type='quantitative' />
+            <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[calendar_year]' derivation='None' name='[none:calendar_year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[dept_name]' derivation='None' name='[none:dept_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1qmggym0z6fjce1bctksb1jdjfrt].[none:dept_name:nk]'>
+            <groupfilter function='member' level='[none:dept_name:nk]' member='&quot;Marketing&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1qmggym0z6fjce1bctksb1jdjfrt].[none:dept_name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1qmggym0z6fjce1bctksb1jdjfrt].[none:gender:nk]' />
+              <lod column='[federated.1qmggym0z6fjce1bctksb1jdjfrt].[none:gender:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1qmggym0z6fjce1bctksb1jdjfrt].[avg:avg_salary:qk]</rows>
+        <cols>[federated.1qmggym0z6fjce1bctksb1jdjfrt].[none:calendar_year:qk]</cols>
+      </table>
+      <simple-id uuid='{18447622-4046-4963-A911-2AE4BA43AA13}' />
+    </worksheet>
+    <worksheet name='Sheet 4'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='task4' name='federated.0pm338a1osh57v14tmpvj0alziep' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0pm338a1osh57v14tmpvj0alziep'>
+            <column-instance column='[avg_salary]' derivation='Avg' name='[avg:avg_salary:qk]' pivot='key' type='quantitative' />
+            <column caption='Avg Salary' datatype='real' name='[avg_salary]' role='measure' type='quantitative' />
+            <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+            <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+            <column-instance column='[dept_name]' derivation='None' name='[none:dept_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gender]' derivation='None' name='[none:gender:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0pm338a1osh57v14tmpvj0alziep].[none:gender:nk]' value='36' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0pm338a1osh57v14tmpvj0alziep].[none:gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0pm338a1osh57v14tmpvj0alziep].[avg:avg_salary:qk]</rows>
+        <cols>([federated.0pm338a1osh57v14tmpvj0alziep].[none:dept_name:nk] / [federated.0pm338a1osh57v14tmpvj0alziep].[none:gender:nk])</cols>
+      </table>
+      <simple-id uuid='{B71E2CC8-9513-42B3-880F-87CD27AD494A}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='task3' name='federated.1qmggym0z6fjce1bctksb1jdjfrt' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1qmggym0z6fjce1bctksb1jdjfrt'>
+        <column caption='Dept Name' datatype='string' name='[dept_name]' role='dimension' type='nominal' />
+        <column-instance column='[dept_name]' derivation='None' name='[none:dept_name:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97516' id='12' param='horz' type-v2='layout-flow' w='98698' x='651' y='1242'>
+            <zone h='97516' id='7' param='horz' type-v2='layout-flow' w='85679' x='651' y='1242'>
+              <zone h='97516' id='5' type-v2='layout-basic' w='85679' x='651' y='1242'>
+                <zone h='48758' id='3' name='Sheet 1' w='42839' x='651' y='1242'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48758' id='9' name='Sheet 2' w='42839' x='651' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48758' id='10' name='Sheet 3' w='42840' x='43490' y='1242'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='48758' id='15' name='Sheet 4' w='42840' x='43490' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='97516' id='11' is-fixed='true' param='vert' type-v2='layout-flow' w='13019' x='86330' y='1242'>
+              <zone h='34472' id='13' name='Sheet 3' param='[federated.1qmggym0z6fjce1bctksb1jdjfrt].[none:dept_name:nk]' type-v2='filter' w='13019' x='86330' y='1242'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='10248' id='14' name='Sheet 3' pane-specification-id='0' param='[federated.1qmggym0z6fjce1bctksb1jdjfrt].[none:gender:nk]' type-v2='color' w='13019' x='86330' y='35714'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1300' minheight='1300' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97516' id='19' param='vert' type-v2='layout-flow' w='98698' x='651' y='1242'>
+                <zone fixed-size='280' h='48758' id='3' is-fixed='true' name='Sheet 1' w='42839' x='651' y='1242'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='34472' id='13' mode='checkdropdown' name='Sheet 3' param='[federated.1qmggym0z6fjce1bctksb1jdjfrt].[none:dept_name:nk]' type-v2='filter' w='13019' x='86330' y='1242'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48758' id='10' is-fixed='true' name='Sheet 3' w='42840' x='43490' y='1242'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10248' id='14' name='Sheet 3' pane-specification-id='0' param='[federated.1qmggym0z6fjce1bctksb1jdjfrt].[none:gender:nk]' type-v2='color' w='13019' x='86330' y='35714'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48758' id='9' is-fixed='true' name='Sheet 2' w='42839' x='651' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48758' id='15' is-fixed='true' name='Sheet 4' w='42840' x='43490' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5A6C506B-41EF-421E-876A-257685DF15BA}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='93'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0r241a90wfr6zy1d40hec0yfhg2v].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B618C239-C299-4AE5-9281-87A3E5192EDF}' />
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.01k964h1nyqso313ve1rx1uegmqv].[none:dept_name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.01k964h1nyqso313ve1rx1uegmqv].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F15AA11A-BFCA-4F4D-BD7E-88D3EF4BAB97}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1qmggym0z6fjce1bctksb1jdjfrt].[none:dept_name:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1qmggym0z6fjce1bctksb1jdjfrt].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B587BF23-C697-4BB8-B617-7737D3FB357E}' />
+    </window>
+    <window class='worksheet' name='Sheet 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[federated.0pm338a1osh57v14tmpvj0alziep].[none:gender:nk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{21D43A7D-6378-4304-A6EC-1C4EF585A9D3}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 4'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.0pm338a1osh57v14tmpvj0alziep].[none:gender:nk]'>
+            <bucket-selection />
+          </highlight>
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{C8824994-9AB2-4B0E-945A-D8F210F57717}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>

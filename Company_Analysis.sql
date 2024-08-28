@@ -1,3 +1,6 @@
+use employees_mod;
+
+
 -- 1. Analyzing Gender Distribution Over Time
 
 /* This query provides a breakdown of the number of male and female employees by year from 1990 onwards. 

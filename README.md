@@ -19,6 +19,12 @@ SQL
 4. Stored Procedure for Salary Range Analysis
 
 
+## Tableau Output
+
+[dashboard.pdf](https://github.com/user-attachments/files/16789810/dashboard.pdf)
+
+
+
 ## Author
 
 Lou Meziere
